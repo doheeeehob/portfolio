@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Pretendard';
+  cursor: url('/assets/images/Spacecraft.png'), pointer;
+  user-select: none;
+  text-decoration: none;
+  list-style: none;
+  color: #FDFDFD;
+  background-color: #2C2C2C;
+}
+
+a {
+  cursor: url('/assets/images/Spacecraft.png'), pointer;
+}
+
+
+/**** 정보(스크롤X) ****/
+
+.main-header img {
+  width: 90px;
+  padding: 20px;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+
+}
+
+.intro {
+  padding-left: 50px;
+  background-color: #2C2C2C;
+  border-radius: 0 50% 50% 0;
+  line-height: 30px;
+  height: 100vh;
+  width: 430px;
+  position: relative;
+  position: fixed;
+  left: 0;
+  z-index: 8;
+  border-right: 1px solid #70A8F1;
+}
+
+.intro span {
+  font-weight: 800;
+}
+
+.intro h2 {
+  margin-top: 230px;
+  color: #FDFDFD;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.intro h3 {
+  color: #FDFDFD;
+  font-weight: 200;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.intro p {
+  color: #70A8F1;
+  margin-top: 100px;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 25px;
+
+}
+
+.btn {
+  padding: 0;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #FDFDFD;
+  font-size: 21px;
+}
+
+.btn li:last-child {
+  color: #2C2C2C;
+}
+
+
+.btn li:nth-child(1) {
+  width: 250px;
+  text-align: center;
+  list-style: none;
+  border: 1px solid #70A8F1;
+  border-radius: 50px;
+  padding: 18px 10px;
+  margin-top: 90px;
+  font-size: 22px;
+  font-weight: 400;
+  background-color: #70A8F1;
+}
+
+.btn li:nth-child(1):hover {
+  background-color: #4473b1;
+}
+
+.intro img {
+  position: absolute;
+  width: 100px;
+  bottom: 235px;
+  left: 80px;
+  transition: transform 0.3s ease;
+}
+/* 
+.fb {
+  list-style: none;
+}
+.fb img{
+  position: absolute;
+  bottom: 100px; left: 50px;
+  transition: transform 0.3s ease;
+  width: 110px;
+}
+.gd img{
+  position: absolute;
+  bottom: 105px; left: 180px;
+  transition: transform 0.3s ease;
+  width: 120px;
+}
+
+.fb img:hover {
+  transform: rotate(-10deg);
+} */
+
+/**** 컨텐츠(스크롤) ****/
+
+
+.main {
+  background-color: #2C2C2C;
+}
+
+.main img {
+  margin-left: 300px;
+}
+
+.gr {
+  position: absolute;
+  top: 1200px;
+  left: 430px;
+  z-index: 99;
+}
+
+.main-txt {
+  margin: 0;
+  list-style: none;
+}
+
+.main-txt li {
+  margin: 200px 0 200px 50px;
+}
+
+.main-txt:first-of-type {
+ margin-top: -250px;
+}
+
+.main-txt h2 {
+  margin-left: 500px;
+  font-weight: 500;
+  
+}
+
+
+
+.main-txt h3 {
+margin-left: 550px;
+margin-top: 100px;
+}
+.main-txt p {
+  width: 920px;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 40px;
+  margin: 100px 0 20px 600px;
+}
+
+.main-txt img {
+  margin: 100px 0 0 -500px;
+}
+.main-txt span {
+  color: #70A8F1;
+}
+.mp {
+  margin-left: 585px;
+  display: flex;
+}
+
+.mp h4 {
+  border: 1px solid #5F98EC;
+  padding: 10px 30px;
+  margin: 70px 10px 0 10px;
+  font-weight: 200;
+  border-radius: 50PX;
+  transition: transform 0.3s ease;
+}
+
+.mp h4:hover {
+  background-color: #5F98EC;
+  color: #FDFDFD;
+  transform: scale(1.1);
+}
+
+
+/**** 업버튼 ****/
+
+.to-up {
+  position: absolute;
+  position: fixed;
+  right: 40px;
+  bottom: 30px;
+  z-index: 99;
+}
+
+.to-up img {
+  width: 70px;
+  animation: float 4s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px); /* 위로 20px 이동 */
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+
+.int {
+  position: absolute;
+  z-index: 99;
+  width: 900px;
+}
+.line1 {
+  margin-bottom: 100px;
+}

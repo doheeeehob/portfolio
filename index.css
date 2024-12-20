@@ -1,0 +1,561 @@
+@charset "utf-8";
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/**** main-contents ****/
+body {
+  font-family: 'Pretendard';
+  user-select: none;
+}
+
+a {
+  cursor: url('/assets/images/Spacecraft.png'), pointer;
+}
+
+
+section {
+  height: 105vh;
+  position: relative;
+}
+
+.global-menu a.active {
+  color: white;
+  transition: 1s;
+}
+#section2 {
+  color: white;
+}
+/**** header ****/
+.main-header {
+  display: flex;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+
+.main-header .logo {
+  width: 130px;
+  padding: 20px;
+  position: absolute;
+}
+
+.global-menu {
+  font-size: 20px;
+  font-weight: 800;
+  color: #70A8F1;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 30px;
+  justify-content: center;
+}
+
+.global-menu li {
+  display: block;
+  margin: 0 50px;
+}
+
+.global-menu li:hover {
+  color: #b4d1f7;
+}
+
+/**** home ****/
+.home {
+  background-color: #2C2C2C;
+}
+
+.home h1 {
+  width: 800px;
+  font-size: 105px;
+  position: relative;
+  letter-spacing: -5px;
+  left: 175px;
+  top: 230px;
+}
+
+.home h1:nth-child(1) {
+  font-weight: 300;
+  color: #FDFDFD;
+}
+
+.home h1:nth-child(2) {
+  font-weight: 100;
+  color: #ffffff;
+}
+
+.home h1:nth-child(3) {
+  font-weight: 900;
+  color: #70A8F1;
+}
+
+.home .cloud {
+  position: absolute;
+  bottom: -40px;
+  z-index: 8;
+}
+
+.home .earth {
+  width: 160px;
+  margin: 85px 500px 300px 615px;
+}
+
+.home .book {
+  position: absolute;
+  top: 120px;
+  right: 600px;
+  width: 120px;
+  transform: rotate(-30deg);
+}
+
+.home .gl {
+  position: absolute;
+  bottom: 250px;
+  right: 800px;
+  width: 130px;
+  transform: rotate(30deg);
+  z-index: 9;
+}
+
+.home .pan {
+  position: absolute;
+  bottom: 200px;
+  right: 0;
+  width: 200px;
+  transform: rotate(-40deg);
+}
+
+.home .face {
+  position: absolute;
+  bottom: 230px;
+  right: 320px;
+  width: 450px;
+  z-index: 5;
+}
+
+.home .face2 {
+  position: absolute;
+  bottom: 80px;
+  right: 170px;
+  width: 680px;
+  z-index: 4;
+}
+
+.home .ring1 {
+  position: absolute;
+  width: 950px;
+  right: 40px;
+  bottom: 150px;
+  z-index: 3;
+}
+
+.home .ring2 {
+  position: absolute;
+  width: 950px;
+  right: 40px;
+  bottom: 150px;
+  z-index: 6;
+}
+
+.home .str {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 1200px;
+}
+
+.home .git {
+  position: absolute;
+  bottom: 400px;
+  right: 900px;
+  width: 60px;
+}
+
+.home .html {
+  position: absolute;
+  top: 200px;
+  right: 250px;
+  width: 60px;
+}
+
+/**** about ****/
+.about {
+  background-color: #F9F5EF;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 100px;
+  font-weight: 600;
+  color: #5F98EC;
+  padding-top: 200px;
+}
+
+.about img {
+  width: 140px;
+  position: absolute;
+  top: 165px;
+  left: 540px;
+}
+
+.about .about-introduce {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+.about .about-introduce li {
+  font-size: 25px;
+  font-weight: 200;
+  color: #727272;
+  display: inline-block;
+  border: solid 2px #70A8F1;
+  border-radius: 100px;
+  background-color: #FDFDFD;
+  padding: 40px 60px;
+  margin: 10px 20px;
+  position: relative;
+}
+
+
+.about .about-introduce strong {
+  font-size: 30px;
+  font-weight: 700;
+  color: #313131;
+}
+
+.about .str {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 1200px;
+}
+
+.b-about {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+}
+
+/**** project ****/
+.circleA {
+  background-color: #F9F5EF;
+ height: 800px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+}
+
+.circleM {
+  width: 500px; /* 초기 원의 크기 */
+  height: 500px; /* 초기 원의 크기 */
+  background-color: #5F98EC; /* 원의 색상 */
+  border-radius: 50%; /* 원 모양 만들기 */
+  transition: width 0.1s, height 0.1s; /* 부드러운 크기 변화 */
+  top: 0; /* 수직 중앙 */
+  left: 50%; /* 왼쪽에서 50% 위치 */
+  transform: translateX(-50%); /* 요소를 왼쪽으로 50% 이동 */
+  position: absolute;
+}
+
+.project {
+  background-color: #5F98EC;
+  height: 110vh;
+}
+
+.project .project-list {
+  color: #FDFDFD;
+  padding: 200px 300px;
+  display: block;
+  z-index: 30;
+
+}
+
+
+.project .project-list li {
+  font-size: 90px;
+  font-weight: 200;
+  padding-top: 20px;
+}
+
+.project .project-list li:hover {
+  font-size: 120px;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+.project .com {
+  position: absolute;
+  right: 50px;
+  bottom: 100px;
+  width: 900px;
+}
+
+.project .p1 {
+  position: absolute;
+  right: 650px;
+  bottom: 200px;
+  width: 85px;
+  z-index: 12;
+}
+
+.project .p2 {
+  position: absolute;
+  right: 600px;
+  bottom: 200px;
+  width: 85px;
+  z-index: 13;
+}
+
+.project .b-str {
+  position: absolute;
+  left: 120px;
+  top: 200px;
+  width: 800px;
+}
+
+
+/**** skill-tools ****/
+.skill-tools {
+  background: linear-gradient(#5F98EC, #2C2C2C);
+  padding-top: 230px;
+  height: 110vh;
+}
+
+.skill-tools .skill-tools-list1 {
+  display: flex;
+  justify-content: center;
+  margin-top: -100px;
+}
+
+.skill-tools .skill-tools-list2 {
+  display: flex;
+  justify-content: center;
+
+}
+
+.skill-tools li {
+  padding: 40px 30px;
+  z-index: 11;
+  width: 450px;
+  height: 350px;
+  border: 1px solid #5F98EC;
+  color: #FDFDFD;
+  transition: transform 0.3s ease;
+}
+
+.skill-tools li:hover {
+  background-color: #5F98EC;
+  color: #FDFDFD;
+  transform: scale(1.05);
+}
+
+.skill-tools h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.skill-tools p {
+  font-size: 17px;
+  font-weight: 200;
+  padding-top: 30px;
+  line-height: 40px;
+}
+
+.moon2 {
+  position: absolute;
+  bottom: 500px;
+  left: 50px;
+  width: 50px;
+}
+
+.moon3 {
+  margin: 0 0 0 1750px;
+  width: 60px;
+}
+
+/**** contact ****/
+.contact {
+  background-color: #2C2C2C;
+  overflow: hidden;
+}
+
+.contact .my-work {
+  padding: 350px 450px;
+}
+
+.contact .my-work li {
+  width: 250px;
+  border-bottom: solid 2px #70A8F1;
+}
+
+.contact .my-work a {
+  display: block;
+  font-size: 70px;
+  font-weight: 200;
+
+  text-align: center;
+  padding-top: 30px;
+  color: #ffff;
+}
+
+.contact .my-work a:hover {
+  font-weight: 100;
+}
+
+
+.contact .e-mail {
+  font-size: 25px;
+  font-weight: 800;
+  background-color: #70A8F1;
+  color: #ffff;
+  padding: 50px 20px 20px;
+  width: 100%;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+}
+
+.contact .e-mail p {
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  transition: transform 0.3s ease;
+  position: absolute;
+  right: 90px;
+  bottom: 20px;
+}
+
+.contact .e-mail p:hover {
+  transform: skewY(-2deg);
+  font-size: 25.5px;
+}
+
+.contact .desk {
+  position: absolute;
+  top: 270px;
+  left: 1000px;
+  width: 370px;
+  z-index: 30;
+  animation: float 2s ease-in-out infinite;
+}
+
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+    /* 위로 20px 이동 */
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.contact .cloud {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+
+}
+
+.contact .pan1 {
+  position: absolute;
+  bottom: 250px;
+  right: 350px;
+  width: 200px;
+  transform: rotate(-50deg);
+  transition: transform 0.8s ease;
+  z-index: 31;
+
+
+}
+
+.contact .pan1:hover {
+  transform: rotate(310deg);
+}
+
+.contact .git1 {
+  position: absolute;
+  bottom: 280px;
+  left: 900px;
+  width: 70px;
+  transform: rotate(-10deg);
+  transition: transform 0.8s ease;
+  z-index: 32;
+
+}
+
+.contact .git1:hover {
+  transform: rotate(350deg);
+}
+
+.contact .html1 {
+  position: absolute;
+  top: 300px;
+  right: 500px;
+  width: 50px;
+  transform: rotate(10deg);
+  transition: transform 0.8s ease;
+  z-index: 33;
+
+}
+
+.contact .html1:hover {
+  transform: rotate(350deg);
+}
+
+.contact .str {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 1200px;
+
+}
+
+/**** lottie ****/
+.moonmove {
+  position: absolute;
+  top: 470px;
+  left: 620px;
+  width: 180px;
+}
+
+.b-str {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  width: 1600px;
+  opacity: 0.3;
+}
+
+.b-clo {
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  width: 2500px;
+  z-index: 40;
+}
+
+.b-str2 {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  width: 1600px;
+
+}
+
+.st-str {
+  position: absolute;
+  top: -50px;
+}
